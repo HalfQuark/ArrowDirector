@@ -7,9 +7,9 @@ import java.util.ArrayList;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
-import org.bukkit.block.Block;
 import org.bukkit.entity.Arrow;
 import org.bukkit.entity.Player;
+import org.bukkit.metadata.FixedMetadataValue;
 import org.bukkit.util.Vector;
 
 import net.countercraft.movecraft.MovecraftLocation;
@@ -101,6 +101,7 @@ public class ArrowDirectorManager extends DirectorManager {
                 Arrow newArrow = w.spawnArrow(arrow.getLocation(), fv, (float) CONFIG.getDouble("ArrowVelocity"), 0);
                 newArrow.setFireTicks(arrow.getFireTicks());
                 newArrow.setShooter(p);
+                newArrow.setMetadata("ArrowDamage", new FixedMetadataValue(ArrowDirectors.instance, ArrowDirectors.CONFIG.getDouble("ArrowDamage")));
                 arrow.remove();
             }
         }

@@ -18,6 +18,7 @@ public class ArrowDirectors extends JavaPlugin {
 		arrowDirectors = new ArrowDirectorManager();
         arrowDirectors.runTaskTimer(this, 0, 1);
         getServer().getPluginManager().registerEvents(new ArrowDirectorSign(), this);
+        getServer().getPluginManager().registerEvents(new ArrowHitListener(), this);
 	}
 	
 	public ArrowDirectorManager getArrowDirectors() {
