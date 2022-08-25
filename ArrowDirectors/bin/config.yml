@@ -1,8 +1,0 @@
-ArrowDirectorDistance: 50
-ArrowDirectorRange: 120
-ArrowVelocity: 5
-Converge: true
-ConvergenceDistance: 180.0
-ArrowDirectorsAllowed:
-- Airskiff
-- Airship

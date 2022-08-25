@@ -1,0 +1,7 @@
+ArrowDirectorDistance: 50
+ArrowDirectorRange: 120
+ArrowVelocity: 5
+ArrowDamage: 10
+DamageCooldown: false
+Converge: true
+ConvergenceDistance: 180.0

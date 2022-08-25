@@ -1,0 +1,4 @@
+name: ArrowDirectors
+version: 1.1.0
+main: me.halfquark.arrowdirectors.ArrowDirectors
+depend: [Movecraft, Movecraft-Combat]

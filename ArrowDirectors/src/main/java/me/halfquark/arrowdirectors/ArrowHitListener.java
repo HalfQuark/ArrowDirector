@@ -23,7 +23,7 @@ public class ArrowHitListener implements Listener {
 		if(!(e.getEntity() instanceof LivingEntity))
 			return;
 		Bukkit.getScheduler().runTaskLaterAsynchronously(ArrowDirectors.instance, ()->{
-            ((LivingEntity) e.getEntity()).setNoDamageTicks(0);
+            ((LivingEntity) e.getEntity()).setNoDamageTicks(1);
         }, 2L);
 	}
 	
