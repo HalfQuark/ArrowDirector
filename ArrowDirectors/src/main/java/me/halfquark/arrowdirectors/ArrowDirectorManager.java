@@ -32,7 +32,7 @@ import java.util.ArrayList;
 import static net.countercraft.movecraft.util.ChatUtils.ERROR_PREFIX;
 
 public class ArrowDirectorManager extends Directors implements Listener {
-    public static final NamespacedKey ALLOW_ARROW_DIRECTOR_SIGN = new NamespacedKey("movecraft-combat", "allow_aa_director_sign");
+    public static final NamespacedKey ALLOW_ARROW_DIRECTOR_SIGN = new NamespacedKey("movecraft-combat", "allow_arrow_director_sign");
     private static final String HEADER = "Arrow Director";
     private long lastCheck = 0;
 
@@ -41,7 +41,7 @@ public class ArrowDirectorManager extends Directors implements Listener {
     }
 
     public static void register() {
-        CraftType.registerProperty(new BooleanProperty("allowAADirectorSign", ALLOW_ARROW_DIRECTOR_SIGN, type -> true));
+        CraftType.registerProperty(new BooleanProperty("allowArrowDirectorSign", ALLOW_ARROW_DIRECTOR_SIGN, type -> true));
     }
 
     public static void load(@NotNull FileConfiguration config) {
